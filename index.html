@@ -1,11 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
+    <!--Metadatos importantes para renderizar nuestra página-->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pastelería: Muffin</title>
 </head>
 <body>
-    
+    <header> <!--Esta es una etiqueta semantica de cabecera-->
+        <nav> <!--Barra de navegación-->
+            <ul><!--Lista desordenada-->
+                <li> <a href="">Nosotros</a></li>
+                <li> <a href="">Promociones</a></li>
+                <li> <a href="">Menu</a></li>
+                <li> <a href="">Contacto</a></li>
+            </ul>
+        </nav> 
+    </header>
+
+    <!-- Información principal de mi pagina-->
+     <main>
+        <!--Seccion sober nosotros-->
+        <article>
+            <h1>Cafeteria Muffin</h1>
+            <p>Nuestra pasión por la repostería nos ha inspirado a hornear el mejor pan, crear pasteles únicos, servir el mejor café pero sobre todo a reinventarnos e innovar todos los días.</p>
+        </article>
+        <!--Seccion de promociones-->
+        <section>
+            <h2>Promociones</h2>
+            <ul>
+                <li><strong>2x1</strong> en Muffins los Lunes y Miercoles</li>
+                <li><strong>Combo super muffin:</strong> Cafe + Pan por 55</li>
+                <li>10% de descuento en pasteles de temporada</li>
+            </ul>
+        </section>
+
+        <!--Seccion de Menu-->
+        <section>
+            <h2>Menu</h2>
+            <!--Tarjeta de postre-->
+            <div>
+                <img src="https://i.blogs.es/396729/como-hacer-carlota-pay-de-limon-1-/450_1000.jpg" alt="Imagen de un pay de limon">
+                <h3>Pay de limon</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quos laudantium odio</p>
+                <p><strong>$280</strong></p>
+                <button>Agregar</button>
+            </div>
+        </section>
+
+        <!--Seccion de receta-->
+        <section>
+            <h2>Receta de la abuela</h2>
+            <h3>Muffin de Zanahoria</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt suscipit sapiente in consequatur veniam architecto, adipisci dignissimos ullam a iusto excepturi facilis voluptatem est, distinctio facere laboriosam aliquid corporis id!</p>
+            <ol>
+                <li>Comprar ...</li>
+                <li>Ordenar ...</li>
+                <li>Meter al orno ...</li>
+            </ol>
+        </section>
+     </main>
+
+     <!--Pie de pagina-->
+     <footer>
+        <!--Seccion de contacto-->
+        <section>
+            <h2>Contacto</h2>
+            <p>Visitanos en nuestra sucursal...</p>
+
+            <h3>Pedidos</h3>
+            <!--Formulario-->
+            <form action="">
+                <label for="">Nombre completo:</label>
+                <input type="text" placeholder="Aqui va tu nombre">
+
+                <label for="">Celular:</label>
+                <input type="tel" placeholder="Deja tu whats">
+
+                <label for="">Correo:</label>
+                <input type="email" placeholder="Deja tu correo">
+
+                <label for="">Sabor del pastel:</label>
+                <div>
+                    <label for=""><input type="radio">Chocolate</label>
+                    <label for=""><input type="radio">Vainilla</label>
+                    <label for=""><input type="radio">Red Velvet</label>
+                    <label for=""><input type="radio">3 leches</label>
+                </div>
+
+                <label for="">Fecha del evento</label>
+                <input type="date" name="" id="">
+
+                <label for="">Imagen de referencia</label>
+                <input type="file" name="" id="">
+
+                <button type="submit">Enviar pedido</button>
+            </form>
+        </section>
+
+        <ul>
+            <li><a href="">Facebook</a></li>
+            <li><a href="">Instagram</a></li>
+            <li><a href="https://www.tiktok.com/@camille.littlecookie/video/7405358458628852998" target="_blank">TikTok</a></li>
+            <li><a href="https://www.youtube.com/watch?v=kmORdzA8nvA" target="_blank">Youtube</a></li>
+        </ul>
+        <!--El atributo target="_blank" abre los enlaces en una nueva pagina-->
+        <p> 2025 Cafeteria Muffin - Todos los derechos reservados</p>
+     </footer>
 </body>
 </html>
