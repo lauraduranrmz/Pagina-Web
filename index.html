@@ -4,16 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pastelería: Muffin</title>
+    <title>Pastelería: Mateo</title>
 </head>
-<body>
+<!--Poniendo CSS con la etiqueta style-->
+<body style="background-color: bisque; font-family: sans-serif;">
     <header> <!--Esta es una etiqueta semantica de cabecera-->
         <nav> <!--Barra de navegación-->
             <ul><!--Lista desordenada-->
-                <li> <a href="">Nosotros</a></li>
-                <li> <a href="">Promociones</a></li>
-                <li> <a href="">Menu</a></li>
-                <li> <a href="">Contacto</a></li>
+                <li> <a href="#nosotros">Nosotros</a></li>
+                <li> <a href="#promociones">Promociones</a></li>
+                <li> <a href="#menu">Menu</a></li>
+                <li> <a href="#contacto">Contacto</a></li>
             </ul>
         </nav> 
     </header>
@@ -21,12 +22,14 @@
     <!-- Información principal de mi pagina-->
      <main>
         <!--Seccion sober nosotros-->
+        <section id="nosotros">
         <article>
-            <h1>Cafeteria Muffin</h1>
-            <p>Nuestra pasión por la repostería nos ha inspirado a hornear el mejor pan, crear pasteles únicos, servir el mejor café pero sobre todo a reinventarnos e innovar todos los días.</p>
+            <h1 style="color: rgba(128, 0, 167, 0.838); font-size: 50px; text-align: center;">Cafeteria Mateo 🎂</h1>
+            <p style="font-size: 30px;">Nuestra pasión por la repostería nos ha inspirado a hornear el mejor pan, crear pasteles únicos, servir el mejor café pero sobre todo a reinventarnos e innovar todos los días.</p>
         </article>
+        </section>
         <!--Seccion de promociones-->
-        <section>
+        <section id="promociones">
             <h2>Promociones</h2>
             <ul>
                 <li><strong>2x1</strong> en Muffins los Lunes y Miercoles</li>
@@ -36,21 +39,22 @@
         </section>
 
         <!--Seccion de Menu-->
-        <section>
+        <section id="menu">
             <h2>Menu</h2>
             <!--Tarjeta de postre-->
             <div>
-                <img src="https://i.blogs.es/396729/como-hacer-carlota-pay-de-limon-1-/450_1000.jpg" alt="Imagen de un pay de limon">
+                <img src="https://i.blogs.es/396729/como-hacer-carlota-pay-de-limon-1-/450_1000.jpg" alt="Imagen de un pay de limon"  height="400">
                 <h3>Pay de limon</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quos laudantium odio</p>
                 <p><strong>$280</strong></p>
-                <button>Agregar</button>
+                <button style="border-radius: 9px; background-color: blueviolet; color: white;">Agregar</button>
             </div>
         </section>
 
         <!--Seccion de receta-->
         <section>
-            <h2>Receta de la abuela</h2>
+            <h2 style="font-family: system-ui;">Receta de la abuela</h2>
+            <img src="https://www.haceloconhuevos.com/wp-content/uploads/2022/02/Muffins-zanahoria.jpg" alt="Muffin Zanahoria" height="300">
             <h3>Muffin de Zanahoria</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt suscipit sapiente in consequatur veniam architecto, adipisci dignissimos ullam a iusto excepturi facilis voluptatem est, distinctio facere laboriosam aliquid corporis id!</p>
             <ol>
@@ -64,7 +68,7 @@
      <!--Pie de pagina-->
      <footer>
         <!--Seccion de contacto-->
-        <section>
+        <section id="contacto">
             <h2>Contacto</h2>
             <p>Visitanos en nuestra sucursal...</p>
 
@@ -94,7 +98,7 @@
                 <label for="">Imagen de referencia</label>
                 <input type="file" name="" id="">
 
-                <button type="submit">Enviar pedido</button>
+                <button type="submit" style="border-radius: 9px; background-color: blueviolet; color: white;">Enviar pedido</button>
             </form>
         </section>
 
